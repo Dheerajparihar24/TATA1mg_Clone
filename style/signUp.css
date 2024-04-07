@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 60%;
+    height: 550px;
+    margin: 5% auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    display: flex;
+}
+.wraper-slide{
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.slide{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    margin: 15% auto;
+    padding: 0 50px;
+    transition: 1s;
+    box-sizing: border-box;
+}
+.slide>.content-div{
+    margin-top: 15%;
+}
+.slide>.content-div>h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(19, 4, 4);
+}
+.slide>.content-div>p{
+    font-size: 14px;
+    margin-top: 10%;
+    color: gray;
+    line-height: 20px;
+    word-spacing: 2px;
+    text-align: center;
+}
+/* login from style */
+.from-container{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.from-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10% 15%;
+}
+.sign001{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+
+}
+h1{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(19, 4, 4);
+}
+p{
+    font-size: 12px;
+    color: gray;
+    line-height: 20px;
+    word-spacing: 2px;
+}
+input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    padding: 0 10px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+#checkbox-div{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+}
+#checkbox-div>input[type=checkbox]{
+    width: 15px;
+    padding: 0;
+    margin: 0;
+}
+.btn-div{
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+}
+.btn-div>button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: rgb(192, 76, 4);
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#login-link{
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    text-align: center;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header with Pop-up Sign-in Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Add your CSS styles here */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 9999;
+        }
+
+        /* Styles for overlay */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9998;
+        }
+    </style>
+</head>
+<body>
+
+<header id="big-screen">
+    <div id="top-nav">
+        <div id="lnk-logo-div">
+            <div class="logo">
+                <img src="https://www.1mg.com/images/tata_1mg_logo.svg" alt="TATA1mg-logo">
+            </div>
+            <div id="top-nav-link">
+                <ul>
+                    <li><a href="">MEDICINES</a></li>
+                    <li><a href="">LAB TESTS</a></li>
+                    <li><a href="">CONSULT DOCTORS</a></li>
+                    <li><a href="">CANCER</a></li>
+                    <li><a href="">AYURVEDA</a></li>
+                    <li><a href="">CARE PLAN</a></li>
+                </ul>
+            </div>
+            <!-- menu for small screen -->
+            <i id="menu-btn" class="fa-solid fa-bars"></i>
+        </div>
+        <div class="profile-navigation-container">
+            <div id="profile-navigation">
+                <div class="login-container">
+                    <a href="#" class="login-link" onclick="openPopup()"> <span>Login</span></a>
+                    <span id="border-login-sigin">|</span>
+                    <a href="#" class="login-link"><span>Sign Up</span></a>
+                </div>
+                <div class="offer"><a href=""><span>Offers</span></a></div>
+                <div class="cart-container">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                    <div class="dropdown-content">
+                        <div id="cart-summary">
+                            <span>Order Summary</span>
+                            <p><span>0</span>Item</p>
+                        </div>
+                        <div id="cart-name">
+                            <span>PRODUCT TO CART</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="need-help-container"><a href=""><span>Need Help?</span></a></div>
+        </div>
+    </div>
+</header>
+
+<!-- Pop-up Sign-in Form -->
+<div class="overlay" id="overlay" onclick="closePopup()"></div>
+<div class="popup" id="popup">
+    <h2>Sign In</h2>
+    <form>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+<script>
+    // JavaScript functions to open and close the pop-up
+    function openPopup() {
+        document.getElementById("popup").style.display = "block";
+        document.getElementById("overlay").style.display = "block";
+    }
+
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+        document.getElementById("overlay").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
