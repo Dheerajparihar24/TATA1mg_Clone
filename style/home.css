@@ -175,7 +175,7 @@ body {
 /* Card control styles */
 .slider-padding i:first-child {
     left: 115px;
-    z-index: 2; /* Ensure the previous button is above other elements */
+    z-index: 1; /* Ensure the previous button is above other elements */
 }
 
 /* Card control styles */
@@ -198,3 +198,201 @@ body {
     transform: translateY(-50%);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
 }
+/*********************---------------- helth-brands-supplement-personalCare_container --------------**************/
+
+#helth-brands-supplement-personalCare_container{
+    width: 100%;
+    margin-top: -20px;background-color: #f7f6f6;
+}
+/*-------------- card-link---------------- */
+.about-card-link-btn{
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.about-card-link-btn:first-child p{
+    font-size: 18px;
+    /* font-weight: 600; */
+}
+.about-card-link-btn>button{
+    background-color: orangered;
+    outline: none;
+    border: none;
+    padding: 5px;
+    font-size: 0.8rem;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*-------------- card-link-end ---------------- */
+/*-------------- card-container ------------------*/
+.helth-card-container{
+    width: 100%;
+    background-color: #fff;
+    margin-top: 5px;
+
+}
+.helth-card-container>.cards {
+    width: 80%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px 0; 
+    -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    margin: auto;
+}
+
+.helth-card-container>.cards::-webkit-scrollbar {
+    display: none; 
+}
+
+.helth-card-container>.cards>.card {
+    flex: 0 0 auto; /* Flex item won't grow, shrink, or basis */
+    width: 275px;
+    height: 123px;
+    border: 1px solid #dcd1d1;
+    border-radius: 5px;
+    margin: 10px 10px;
+    padding: 5px;
+    position: relative;
+}
+.helth-card-container .card_title{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.card_title>div>span{
+    font-size: 15px;
+}
+.safeIcon{
+    display: flex;
+    background-color: wheat;
+    padding: 2px;
+}
+.safeIcon div,div>i{
+    font-size: 14px;
+}
+/*----------------------- Price Section -----------------------*/
+.priceSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+}
+.discountPrice{
+    font-size: 16px;
+    margin-right: 5px;
+}
+.originalPrice p{
+    font-size: 12px;
+    color: green;
+}
+.discount{
+    width: 50px;
+    height: 30px;
+    border: 2px dotted rgb(54, 198, 54);
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* third slider */
+.about-card-link-btn2{
+    margin-top: 30px    ;
+}
+.card2{
+    width: 180px;
+    height: 211px;
+    border-radius: 5px;
+    margin: 0px 10px;
+    padding: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex:  0 0 auto;
+}
+.card2 >div{
+    width: 130px;
+    height: 130px;
+    /* border: 1px solid; */
+}
+.card2 >div>img{
+    width: 100%;
+}
+.card2:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card3:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* fourth slider */
+.card3{
+    width: 175px;
+    /* height: 265px; */
+    padding: 5px;
+    margin: 0px 10px;
+    flex:  0 0 auto;
+    /* border: 1px solid; */
+    border-radius: 5px;
+}
+.cardImgDiv{
+    width: 158px;
+    height: 195px;
+    /* border: 1px solid; */
+    margin: auto;
+    object-fit: cover;
+    overflow: hidden;
+}
+.cardImgDiv >img{
+    width: 90%;
+}
+
+ .productName{
+    font-size: 13px;
+    margin:  0px 0px 3px;
+    margin-top: 30px;
+}
+.packSize{
+    font-size: 13px;
+    color: #757575;
+    margin: 5px 0px;
+}
+.deliveryTime{
+    font-size: 12px;
+    margin: 8px 0px;
+}
+.deliveryTime span{
+    font-size: 12px;
+    font-weight: 600;
+}
+.priceOrginal{
+    font-size: 12px;
+    color: #757575;
+    margin-top: 25px;
+}
+.discountPrice{
+    font-size: 16px;
+    color: #212121;
+    margin: 10px 0px;
+} 
+.aboutTest{
+    font-size: 12px;
+    color: gray;
+}
+/*********************---------------- helth-brands-supplement-personalCare_container ---------------**************/
+
+
+
+
+
+
+

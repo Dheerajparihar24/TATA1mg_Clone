@@ -1,127 +1,96 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.container{
-    width: 60%;
-    height: 550px;
-    margin: 5% auto;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 10px;
-    display: flex;
-}
-.wraper-slide{
-    width: 50%;
-    height: 100%;
-    border-right: 1px solid;
-    position: relative;
-    overflow: hidden;
-    box-sizing: border-box;
-}
-.slide{
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    margin: 15% auto;
-    padding: 0 50px;
-    transition: 1s;
-    box-sizing: border-box;
-}
-.slide>.content-div{
-    margin-top: 15%;
-}
-.slide>.content-div>h3{
-    font-size: 20px;
-    font-weight: 600;
-    color: rgb(19, 4, 4);
-}
-.slide>.content-div>p{
-    font-size: 14px;
-    margin-top: 10%;
-    color: gray;
-    line-height: 20px;
-    word-spacing: 2px;
-    text-align: center;
-}
-/* login from style */
-.from-container{
-    width: 50%;
-    height: 100%;
-    text-align: center;
-}
 
-.from-div{
-    width: 100%;
-    height: 100%;
+#sign-Up {
+    width: 55%;
+    right: 25%;
+    /* display: none; */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10% 15%;
-}
-.sign001{
-    margin: 0;
-    padding: 0;
-    margin-bottom: 20px;
-
-}
-h1{
-    font-size: 30px;
-    font-weight: 600;
-    color: rgb(19, 4, 4);
-}
-p{
-    font-size: 12px;
-    color: gray;
-    line-height: 20px;
-    word-spacing: 2px;
-}
-input{
-    width: 100%;
-    height: 40px;
-    border-radius: 5px;
-    outline: none;
-    padding: 0 10px;
-    font-size: 14px;
-    margin-top: 20px;
-}
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-#checkbox-div{
-    display: flex;
-    margin-top: 20px;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
-    font-size: 12px;
+    margin: auto;
+    padding: 40px;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: absolute;
+    z-index: 1;
+    background-color:#fff;
+    visibility: hidden;
+
 }
-#checkbox-div>input[type=checkbox]{
-    width: 15px;
-    padding: 0;
-    margin: 0;
+
+i {
+    display: inline;
+    margin-top: -100%;
+    margin-right: -90%;
 }
-.btn-div{
-    width: 100%;
-    height: 40px;
-    margin-top: 20px;
+
+
+#signUp-slider {
+    width: 50%;
+    height: 400px;
+    text-align: center;
+    padding: 20px 0;
+    /* border: 2px solid; */
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    /* z-index: 1; */
+
 }
-.btn-div>button{
+
+.slide {
     width: 100%;
     height: 100%;
+    /* border: 1px solid; */
+    position: absolute;
+    margin-bottom: 0px;
+    /* overflow: hidden; */
+}
+
+#signUp-slider img {
+    margin-bottom: 50px;
+}
+
+#signUp-slider p {
+    color: rgb(109, 105, 105);
+    font-size: 1.1rem;
+    word-spacing: 3px;
+    margin-top: 20px;
+}
+
+/*---------------- signUp form ---------------*/
+#signUp-from {
+    width: 45%;
+    /* border: 1px solid; */
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.signUp-label {
+    font-size: 1rem;
+    margin-top: 20px;
+    /* font-weight: 600; */
+    float: left;
+}
+
+#signUp-from input {
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#signUp-from #submit-btn {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
     border: none;
     outline: none;
-    background-color: rgb(192, 76, 4);
-    color: white;
-    font-size: 19px;
-    font-weight: 600;
-    cursor: pointer;
-}
-#login-link{
-    padding: 0;
-    margin: 0;
-    margin-top: 20px;
-    text-align: center;
+    background: orange;
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TATA 1mg_clone</title>
     <!-- icon link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="style/navbar.css">
     <!-- home page style -->
     <link rel="stylesheet" href="style/home.css">
+    <!-- sign Up -->
+    <link rel="stylesheet" href="style/signUp.css">
 </head>
 
 <body>
@@ -40,7 +42,9 @@
                     <div class="login-container">
                         <a href="" class="login-link"> <span>Login</span></a>
                         <span id="border-login-sigin">|</span>
-                        <a href="#" id="signup-btn" class="login-link"><span>Sign Up</span></a>
+                        <a href="#" id="signup-btn" class="login-link"
+                            onclick="document.getElementById('sign-Up').style.visibility='visible'"><span>Sign
+                                Up</span></a>
                     </div>
                     <div class="offer"><a href=""><span>Offers</span></a></div>
                     <div class="cart-container">
@@ -72,7 +76,7 @@
                 </div>
                 <!-- search-div -->
                 <div class="searchbar-div">
-                    <input type="text" id="srchBarShwInfo" placeholder="Search for Medicines and Health Products"
+                    <input type="search" id="srchBarShwInfo" placeholder="Search for Medicines and Health Products"
                         value="">
                     <div class="input-serch-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
                 </div>
@@ -95,37 +99,284 @@
         <!------------ nav-second-row-end --------------->
         <div class="nav-third-row">
             <ul>
-                <li class="na-orange-hover">
+                <li class="na-orange-hover" id="navThird-linkFirst">
                     <div>
                         <a href=""><span>Health Resource Center</span></a>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
-                    <!-- <div class="dropdown-div">
-                    </div> -->
+                    <div class="dropdown-div">
+                        <a href="#">All Diseases</a>
+                        <a href="#">All Medicines</a>
+                        <a href="#">Medicines by Therapeutic Class</a>
+                    </div>
                 </li>
-                <li class="na-orange-hover">
+                <li class="na-orange-hover" id="navThird-linkSecond">
                     <div>
                         <a href=""><span>Vitamins & Nutrition</span></a>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
-                    <!-- <div class="dropdown-div">
-                    </div> -->
+                    <div class="dropdown-div-1">
+                        <div>
+                            <div>
+                                <a href="#"><b>Vitamins & Supplements</b></a>
+                                <a href="#">Multivitamins</a>
+                                <a href="#">Vitamin D3</a>
+                                <a href="#">Vitamin C</a>
+                                <a href="#">Minerals</a>
+                                <a href="#">Calcium</a>
+                                <a href="#">Vitamin B12 & B Complex</a>
+                                <a href="#">Other Vitamins</a>
+                                <a href="#"><b>Nutritional Drinks</b></a>
+                                <a href="#">Adult Daily Nutrition</a>
+                                <a href="#">Kids Nutrition (2-15 Yrs)</a>
+                                <a href="#">Women Nutrition</a>
+                                <a href="#"><b>Global supplements</b></a>
+                                <a href="#">Now Foods</a>
+                                <a href="#">Solgar</a>
+                                <a href="#">Nordic naturals</a>
+                            </div>
+                            <div>
+                                <a href="#"><b> Nutritional Supplements</b></a>
+                                <a href="#">Dr. Morepen</a>
+                                <a href="#">Power Gummies</a>
+                                <a href="#">Tata 1mg</a>
+                                <a href="#">HealthKart</a>
+                                <a href="#">Carbamide Forte</a>
+                                <a href="#">Swisse</a>
+                                <a href="#">Zingavita</a>
+                                <a href="#">Protein Supplements</a>
+                                <a href="#">Whey Protein</a>
+                                <a href="#">Amino Acids</a>
+                                <a href="#">Mass Gainers</a>
+                                <a href="#">Workout Essential</a>
+                                <a href="#">Fat Burners</a>
+                            </div>
+                            <div>
+                                <a href="#"><b>Healthy Snacks & Drinks</b></a>
+                                <a href="#">Green Tea & Herbal Tea</a>
+                                <a href="#">Energy Foods</a>
+                                <a href="#">Rehydration Beverages</a>
+                                <a href="#">Apple Cider Vinegar</a>
+                                <a href="#">Nuts & Cereals</a>
+                                <a href="#">Chyawanprasha</a>
+                                <a href="#"><b>Omega & Fish Oil</b></a>
+                                <a href="#">Fish Oil</a>
+                                <a href="#">Cod Liver Oil</a>
+                                <a href="#">Flax Seed Oil</a>
+                                <a href="#"><b> Specialty Supplements</b></a>
+                                <a href="#">Pre and Probiotics</a>
+                                <a href="#">Glucosamine</a>
+                                <a href="#">Collagen</a>
+                                <a href="#">Antioxidants</a>
+                                <a href="#">Biotin</a>
+                            </div>
+                            <div>
+                                <a href="#"><b>Vitamins & Supplements</b></a>
+                                <a href="#">Multivitamins</a>
+                                <a href="#">Vitamin D3</a>
+                                <a href="#">Vitamin C</a>
+                                <a href="#">Minerals</a>
+                                <a href="#">Calcium</a>
+                                <a href="#">Vitamin B12 & B Complex</a>
+                                <a href="#">Other Vitamins</a>
+                                <a href="#"><b>Nutritional Drinks</b></a>
+                                <a href="#">Adult Daily Nutrition</a>
+                                <a href="#">Kids Nutrition (2-15 Yrs)</a>
+                                <a href="#">Women Nutrition</a>
+                                <a href="#"><b>Global supplements</b></a>
+                                <a href="#">Now Foods</a>
+                                <a href="#">Solgar</a>
+                                <a href="#">Nordic naturals</a>
+                            </div>
+                        </div>
+                    </div>
                 </li>
-                <li class="na-orange-hover">
+                <li class="na-orange-hover" id="navThird-linkthird">
                     <div>
                         <a href=""><span>Personal Care</span></a>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
-                    <!-- <div class="dropdown-div">
-                    </div> -->
+                    <div class="dropdown-div-2">
+                        <div>
+                            <div>
+                                <a href="#"><b>Vitamins & Supplements</b></a>
+                                <a href="#">Multivitamins</a>
+                                <a href="#">Vitamin D3</a>
+                                <a href="#">Vitamin C</a>
+                                <a href="#">Minerals</a>
+                                <a href="#">Calcium</a>
+                                <a href="#">Vitamin B12 & B Complex</a>
+                                <a href="#">Other Vitamins</a>
+                                <a href="#"><b>Nutritional Drinks</b></a>
+                                <a href="#">Adult Daily Nutrition</a>
+                                <a href="#">Kids Nutrition (2-15 Yrs)</a>
+                                <a href="#">Women Nutrition</a>
+                                <a href="#"><b>Global supplements</b></a>
+                                <a href="#">Now Foods</a>
+                                <a href="#">Solgar</a>
+                                <a href="#">Nordic naturals</a>
+                            </div>
+                            <div>
+                                <a href="#"><b> Nutritional Supplements</b></a>
+                                <a href="#">Dr. Morepen</a>
+                                <a href="#">Power Gummies</a>
+                                <a href="#">Tata 1mg</a>
+                                <a href="#">HealthKart</a>
+                                <a href="#">Carbamide Forte</a>
+                                <a href="#">Swisse</a>
+                                <a href="#">Zingavita</a>
+                                <a href="#">Protein Supplements</a>
+                                <a href="#">Whey Protein</a>
+                                <a href="#">Amino Acids</a>
+                                <a href="#">Mass Gainers</a>
+                                <a href="#">Workout Essential</a>
+                                <a href="#">Fat Burners</a>
+                            </div>
+                            <div>
+                                <a href="#"><b>Healthy Snacks & Drinks</b></a>
+                                <a href="#">Green Tea & Herbal Tea</a>
+                                <a href="#">Energy Foods</a>
+                                <a href="#">Rehydration Beverages</a>
+                                <a href="#">Apple Cider Vinegar</a>
+                                <a href="#">Nuts & Cereals</a>
+                                <a href="#">Chyawanprasha</a>
+                                <a href="#"><b>Omega & Fish Oil</b></a>
+                                <a href="#">Fish Oil</a>
+                                <a href="#">Cod Liver Oil</a>
+                                <a href="#">Flax Seed Oil</a>
+                                <a href="#"><b> Specialty Supplements</b></a>
+                                <a href="#">Pre and Probiotics</a>
+                                <a href="#">Glucosamine</a>
+                                <a href="#">Collagen</a>
+                                <a href="#">Antioxidants</a>
+                                <a href="#">Biotin</a>
+                            </div>
+                            <div>
+                                <a href="#"><b>Vitamins & Supplements</b></a>
+                                <a href="#">Multivitamins</a>
+                                <a href="#">Vitamin D3</a>
+                                <a href="#">Vitamin C</a>
+                                <a href="#">Minerals</a>
+                                <a href="#">Calcium</a>
+                                <a href="#">Vitamin B12 & B Complex</a>
+                                <a href="#">Other Vitamins</a>
+                                <a href="#"><b>Nutritional Drinks</b></a>
+                                <a href="#">Adult Daily Nutrition</a>
+                                <a href="#">Kids Nutrition (2-15 Yrs)</a>
+                                <a href="#">Women Nutrition</a>
+                                <a href="#"><b>Global supplements</b></a>
+                                <a href="#">Now Foods</a>
+                                <a href="#">Solgar</a>
+                                <a href="#">Nordic naturals</a>
+                            </div>
+                            <div>
+                                <a href="#"><b>Vitamins & Supplements</b></a>
+                                <a href="#">Multivitamins</a>
+                                <a href="#">Vitamin D3</a>
+                                <a href="#">Vitamin C</a>
+                                <a href="#">Minerals</a>
+                                <a href="#">Calcium</a>
+                                <a href="#">Vitamin B12 & B Complex</a>
+                                <a href="#">Other Vitamins</a>
+                                <a href="#"><b>Nutritional Drinks</b></a>
+                                <a href="#">Adult Daily Nutrition</a>
+                                <a href="#">Kids Nutrition (2-15 Yrs)</a>
+                                <a href="#">Women Nutrition</a>
+                                <a href="#"><b>Global supplements</b></a>
+                                <a href="#">Now Foods</a>
+                                <a href="#">Solgar</a>
+                                <a href="#">Nordic naturals</a>
+                            </div>
+                            <div>
+                                <a href="#">Vitamin B12 & B Complex</a>
+                                <a href="#">Other Vitamins</a>
+                                <a href="#"><b>Nutritional Drinks</b></a>
+                                <a href="#">Adult Daily Nutrition</a>
+                                <a href="#">Kids Nutrition (2-15 Yrs)</a>
+                                <a href="#">Women Nutrition</a>
+                                <a href="#"><b>Global supplements</b></a>
+                                <a href="#">Now Foods</a>
+                                <a href="#">Solgar</a>
+                                <a href="#">Nordic naturals</a>
+                            </div>
+                        </div>
+                    </div>
                 </li>
-                <li class="na-orange-hover">
+                <li class="na-orange-hover" id="navThird-linkforth">
                     <div>
                         <a href=""><span>Healthcare Devices</span></a>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
-                    <!-- <div class="dropdown-div">
-                    </div> -->
+                    <div class="dropdown-div-3">
+                        <div>
+                            <div>
+                                <a href="#"><b>Vitamins & Supplements</b></a>
+                                <a href="#">Multivitamins</a>
+                                <a href="#">Vitamin D3</a>
+                                <a href="#">Vitamin C</a>
+                                <a href="#">Minerals</a>
+                                <a href="#">Calcium</a>
+                                <a href="#">Vitamin B12 & B Complex</a>
+                                <a href="#">Other Vitamins</a>
+                                <a href="#"><b>Nutritional Drinks</b></a>
+                                <a href="#">Adult Daily Nutrition</a>
+                                <a href="#">Kids Nutrition (2-15 Yrs)</a>
+                                <a href="#">Women Nutrition</a>
+                                <a href="#"><b>Global supplements</b></a>
+                                <a href="#">Now Foods</a>
+                                <a href="#">Solgar</a>
+                                <a href="#">Nordic naturals</a>
+                                <a href="#"><b>Nutritional Drinks</b></a>
+                                <a href="#">Adult Daily Nutrition</a>
+                                <a href="#">Kids Nutrition (2-15 Yrs)</a>
+                                <a href="#">Women Nutrition</a>
+                            </div>
+                            <div>
+                                <a href="#"><b> Nutritional Supplements</b></a>
+                                <a href="#">Dr. Morepen</a>
+                                <a href="#">Power Gummies</a>
+                                <a href="#">Tata 1mg</a>
+                                <a href="#">HealthKart</a>
+                                <a href="#">Carbamide Forte</a>
+                                <a href="#">Swisse</a>
+                                <a href="#">Zingavita</a>
+                                <a href="#">Protein Supplements</a>
+                                <a href="#">Whey Protein</a>
+                                <a href="#">Amino Acids</a>
+                                <a href="#">Mass Gainers</a>
+                                <a href="#">Workout Essential</a>
+                                <a href="#">Fat Burners</a>
+                                <a href="#">Vitamin B12 & B Complex</a>
+                                <a href="#">Other Vitamins</a>
+                                <a href="#"><b>Nutritional Drinks</b></a>
+                                <a href="#">Adult Daily Nutrition</a>
+                                <a href="#">Kids Nutrition (2-15 Yrs)</a>
+                                <a href="#">Women Nutrition</a>
+                            </div>
+                            <div>
+                                <a href="#"><b>Healthy Snacks & Drinks</b></a>
+                                <a href="#">Green Tea & Herbal Tea</a>
+                                <a href="#">Energy Foods</a>
+                                <a href="#">Rehydration Beverages</a>
+                                <a href="#">Apple Cider Vinegar</a>
+                                <a href="#">Nuts & Cereals</a>
+                                <a href="#">Chyawanprasha</a>
+                                <a href="#"><b>Omega & Fish Oil</b></a>
+                                <a href="#">Fish Oil</a>
+                                <a href="#">Cod Liver Oil</a>
+                                <a href="#">Flax Seed Oil</a>
+                                <a href="#"><b> Specialty Supplements</b></a>
+                                <a href="#">Pre and Probiotics</a>
+                                <a href="#">Glucosamine</a>
+                                <a href="#">Collagen</a>
+                                <a href="#">Antioxidants</a>
+                                <a href="#">Biotin</a>
+                                <a href="#">Vitamin C</a>
+                                <a href="#">Minerals</a>
+                                <a href="#">Calcium</a>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li class="na-orange-hover">
                     <div>
@@ -170,22 +421,98 @@
             </ul>
         </div>
     </header>
+    <!------------------------------- signUp page ---------------------->
+    <div class="container-signUp">
+        <div id="sign-Up">
+            <div id="signUp-slider">
+                <div class="slide">
+                    <img src="https://www.1mg.com/images/login-signup/Your-Go-To-Health-App.png" alt="">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus possimus voluptas
+                        recusandae
+                        reiciend</p>
+                </div>
+                <div class="slide">
+                    <img src="https://www.1mg.com/images/login-signup/Know-Your-Medicines.png" alt="">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus possimus voluptas
+                        recusandae
+                        reiciend</p>
+                </div>
+                <div class="slide">
+                    <img src="https://www.1mg.com/images/login-signup/Lab-Tests-at-Home.png" alt="">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus possimus voluptas
+                        recusandae
+                        reiciend</p>
+                </div>
+                <div class="slide">
+                    <img src="https://www.1mg.com/images/login-signup/Health-Related-Queries.png" alt="">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus possimus voluptas
+                        recusandae
+                        reiciend</p>
+                </div>
+            </div>
+            <div id="signUp-from">
+                <i class="fa-solid fa-xmark"></i>
+                <h1>Sign Up</h1>
+                <form>
+                    <label class="signUp-label" for="">First Name*</label>
+                    <br>
+                    <input type="text">
+                    <br>
+                    <label class="signUp-label" for="">Email address*</label>
+                    <br>
+                    <input type="email">
+                    <br>
+                    <label class="signUp-label" for="">Password*</label>
+                    <br>
+                    <input type="password">
+                    <br>
+                    <input id="submit-btn" type="submit" value="Sing Up">
+                </form>
+                <p>Already a user? <a href="">Sign-In</a></p>
+            </div>
+        </div>
+    </div>
+    <!------------------------------- signUp page end ---------------------->
     <div id="banner-container">
         <div id="banner-slide-container">
             <div class="slides">
-                <img class="slide" src="https://onemg.gumlet.io/7813da63-d0a5-4461-a897-274de753f95e_1663825942.png?w=1013&h=250&format=auto" alt="">
-                <img class="slide" src="https://onemg.gumlet.io/49c3d7f4-2c53-4785-a537-ffffe0b4910c_1711087711.png?w=1013&h=250&format=auto" alt="">
-                <img src="https://onemg.gumlet.io/e84d656e-bd74-4e1b-a822-af2a2b035846_1708002794.jpg?w=1013&h=250&format=auto" alt="">
-                <img class="slide" src="https://onemg.gumlet.io/3d64dd10-ba44-4ed2-a6b2-18416434f0c0_1707730034.jpg?w=1013&h=250&format=auto" alt="">
-                <img class="slide" src="https://onemg.gumlet.io/3bae5085-de99-4170-b411-06118f562649_1711117731.jpg?w=1013&h=250&format=auto" alt="">
-                <img class="slide" src="https://onemg.gumlet.io/f50cdcfd-2c10-4d95-acbb-53a6dd4816e2_1700120354.png?w=1013&h=250&format=auto" alt="">
-                <img class="slide" src="https://onemg.gumlet.io/9d46c129-a6c4-4770-a1bc-21de31328191_1700468301.png?w=1013&h=250&format=auto" alt="">
-                <img class="slide" src="https://onemg.gumlet.io/33eab3f0-49a1-476d-8c1f-2fe4159bcf4d_1679394544.png?w=1013&h=250&format=auto" alt="">
-                <img class="slide" src="https://onemg.gumlet.io/e0686aa4-1aab-4f47-a576-696dcec8cf12_1709298575.png?w=1013&h=250&format=auto" alt="">
-                <img class="slide" src="https://onemg.gumlet.io/20a26983-288b-4e9a-bac7-256e0c0d0832_1705995212.png?w=1013&h=250&format=auto" alt="">
+                <img class="slide"
+                    src="https://onemg.gumlet.io/7813da63-d0a5-4461-a897-274de753f95e_1663825942.png?w=1013&h=250&format=auto"
+                    alt="">
+                <img class="slide"
+                    src="https://onemg.gumlet.io/49c3d7f4-2c53-4785-a537-ffffe0b4910c_1711087711.png?w=1013&h=250&format=auto"
+                    alt="">
+                <img src="https://onemg.gumlet.io/e84d656e-bd74-4e1b-a822-af2a2b035846_1708002794.jpg?w=1013&h=250&format=auto"
+                    alt="">
+                <img class="slide"
+                    src="https://onemg.gumlet.io/3d64dd10-ba44-4ed2-a6b2-18416434f0c0_1707730034.jpg?w=1013&h=250&format=auto"
+                    alt="">
+                <img class="slide"
+                    src="https://onemg.gumlet.io/3bae5085-de99-4170-b411-06118f562649_1711117731.jpg?w=1013&h=250&format=auto"
+                    alt="">
+                <img class="slide"
+                    src="https://onemg.gumlet.io/f50cdcfd-2c10-4d95-acbb-53a6dd4816e2_1700120354.png?w=1013&h=250&format=auto"
+                    alt="">
+                <img class="slide"
+                    src="https://onemg.gumlet.io/9d46c129-a6c4-4770-a1bc-21de31328191_1700468301.png?w=1013&h=250&format=auto"
+                    alt="">
+                <img class="slide"
+                    src="https://onemg.gumlet.io/33eab3f0-49a1-476d-8c1f-2fe4159bcf4d_1679394544.png?w=1013&h=250&format=auto"
+                    alt="">
+                <img class="slide"
+                    src="https://onemg.gumlet.io/e0686aa4-1aab-4f47-a576-696dcec8cf12_1709298575.png?w=1013&h=250&format=auto"
+                    alt="">
+                <img class="slide"
+                    src="https://onemg.gumlet.io/20a26983-288b-4e9a-bac7-256e0c0d0832_1705995212.png?w=1013&h=250&format=auto"
+                    alt="">
             </div>
             <div class="fixImg">
-                <img src="https://onemg.gumlet.io/diagnostics%2F2024-01%2F1706088937_1948x800+%2827%29.png" alt="TATA 1mg discout">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2024-01%2F1706088937_1948x800+%2827%29.png"
+                    alt="TATA 1mg discout">
             </div>
         </div>
         <div id="content-for-slide">
@@ -205,58 +532,707 @@
             <section class="slider-padding">
                 <i id="left" class="fa-solid fas fa-angle-left"></i>
                 <ul class="carousel">
-                  <li class="card">
-                    <div class="car-image">
-                      <img src="https://onemg.gumlet.io/a56b26a0-30f1-4977-96f8-7acf1b3e0e02.png?format=auto" alt="">
-                    </div>
-                    <span class="title">Dibetes</span>
-                  </li>
-                  <li class="card">
-                    <div class="car-image">
-                        <img src="https://onemg.gumlet.io/629aaf65-515f-4069-b730-28618f78597b.png?format=auto" alt="">
-                    </div>
-                    <span class="title">Heart Care</span>
-                </li><li class="card">
-                    <div class="car-image">
-                        <img src="https://onemg.gumlet.io/b251c9cf-8d88-4fb8-8c3c-7b328caa9f70.png?format=auto" alt="">
-                    </div>
-                    <span class="title">Stomach Care</span>
-                </li><li class="card">
-                    <div class="car-image">
-                        <img src="https://onemg.gumlet.io/573d8a1a-edd0-46a5-a0fe-01a1c2bcc8f2.png?format=auto" alt="">
-                    </div>
-                    <span class="title">Liver Care</span>
-                </li><li class="card">
-                    <div class="car-image">
-                        <img src="https://onemg.gumlet.io/a1af8b43-2836-483d-8709-99eff1cc6f70.png?format=auto" alt="">
-                    </div>
-                    <span class="title">Bone, Joint & Muscle Care</span>
-                </li><li class="card">
-                    <div class="car-image">
-                        <img src="https://onemg.gumlet.io/96f9ed8a-ba62-426c-bd66-6762f40f3370.png?format=auto" alt="">
-                    </div>
-                    <span class="title">Kidney Care</span>
-                </li><li class="card">
-                    <div class="car-image">
-                        <img src="https://onemg.gumlet.io/730dbe50-4bdc-4fa8-9a09-93bc5d6c6f38.png?format=auto" alt="">
-                    </div>
-                    <span class="title">Derma Care</span>
-                </li><li class="card">
-                    <div class="car-image">
-                        <img src="https://onemg.gumlet.io/8051e79c-6152-440e-b402-8d1ba8d7c82e.png?format=auto" alt="">
-                    </div>
-                    <span class="title">Respiratory Care</span>
-                </li>
-                <li class="card">
-                    <div class="car-image">
-                        <img src="https://onemg.gumlet.io/1627c0d3-a6ed-470a-8b18-94baa9fdbcfc.png?format=auto" alt="">
-                    </div>
-                    <span class="title">Eye Care</span>
-                </li>
+                    <li class="card">
+                        <div class="car-image">
+                            <img src="https://onemg.gumlet.io/a56b26a0-30f1-4977-96f8-7acf1b3e0e02.png?format=auto"
+                                alt="">
+                        </div>
+                        <span class="title">Dibetes</span>
+                    </li>
+                    <li class="card">
+                        <div class="car-image">
+                            <img src="https://onemg.gumlet.io/629aaf65-515f-4069-b730-28618f78597b.png?format=auto"
+                                alt="">
+                        </div>
+                        <span class="title">Heart Care</span>
+                    </li>
+                    <li class="card">
+                        <div class="car-image">
+                            <img src="https://onemg.gumlet.io/b251c9cf-8d88-4fb8-8c3c-7b328caa9f70.png?format=auto"
+                                alt="">
+                        </div>
+                        <span class="title">Stomach Care</span>
+                    </li>
+                    <li class="card">
+                        <div class="car-image">
+                            <img src="https://onemg.gumlet.io/573d8a1a-edd0-46a5-a0fe-01a1c2bcc8f2.png?format=auto"
+                                alt="">
+                        </div>
+                        <span class="title">Liver Care</span>
+                    </li>
+                    <li class="card">
+                        <div class="car-image">
+                            <img src="https://onemg.gumlet.io/a1af8b43-2836-483d-8709-99eff1cc6f70.png?format=auto"
+                                alt="">
+                        </div>
+                        <span class="title">Bone, Joint & Muscle Care</span>
+                    </li>
+                    <li class="card">
+                        <div class="car-image">
+                            <img src="https://onemg.gumlet.io/96f9ed8a-ba62-426c-bd66-6762f40f3370.png?format=auto"
+                                alt="">
+                        </div>
+                        <span class="title">Kidney Care</span>
+                    </li>
+                    <li class="card">
+                        <div class="car-image">
+                            <img src="https://onemg.gumlet.io/730dbe50-4bdc-4fa8-9a09-93bc5d6c6f38.png?format=auto"
+                                alt="">
+                        </div>
+                        <span class="title">Derma Care</span>
+                    </li>
+                    <li class="card">
+                        <div class="car-image">
+                            <img src="https://onemg.gumlet.io/8051e79c-6152-440e-b402-8d1ba8d7c82e.png?format=auto"
+                                alt="">
+                        </div>
+                        <span class="title">Respiratory Care</span>
+                    </li>
+                    <li class="card">
+                        <div class="car-image">
+                            <img src="https://onemg.gumlet.io/1627c0d3-a6ed-470a-8b18-94baa9fdbcfc.png?format=auto"
+                                alt="">
+                        </div>
+                        <span class="title">Eye Care</span>
+                    </li>
                 </ul>
                 <i id="right" class="fa-solid fas fa-angle-right"></i>
-              </section>
+            </section>
         </div>
+    </div>
+    <div id="helth-brands-supplement-personalCare_container">
+        <section id="Full_body_health_checkups_cards">
+            <div class="about-card-link-btn">
+                <p>Full body helth checkups</p>
+                <button>SEE ALL</button>
+            </div>
+            <div class="helth-card-container">
+                <div class="cards">
+                    <div class="card">
+                        <div class="card_title">
+                            <div>
+                                <span>Gold Helth Smart Package</span>
+                            </div>
+                            <div class="safeIcon">
+                                <div><i class="fa-solid fa-shield-halved"></i></div>
+                                <div>SAFE</div>
+                            </div>
+                        </div>
+                        <div class="priceSection">
+                            <div class="discountPrice">
+                                ₹399
+                            </div>
+                            <div class="originalPrice">
+                                <p><del> ₹800</del></p>
+                            </div>
+                            <div class="discount">
+                                50%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_title">
+                            <div>
+                                <span>Gold Helth Smart Package</span>
+                            </div>
+                            <div class="safeIcon">
+                                <div><i class="fa-solid fa-shield-halved"></i></div>
+                                <div>SAFE</div>
+                            </div>
+                        </div>
+                        <div class="priceSection">
+                            <div class="discountPrice">
+                                ₹2199
+                            </div>
+                            <div class="originalPrice">
+                                <p> <del>₹4098</del></p>
+                            </div>
+                            <div class="discount">
+                                50%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_title">
+                            <div>
+                                <span>Gold Helth Smart Package</span>
+                            </div>
+                            <div class="safeIcon">
+                                <div><i class="fa-solid fa-shield-halved"></i></div>
+                                <div>SAFE</div>
+                            </div>
+                        </div>
+                        <div class="priceSection">
+                            <div class="discountPrice">
+                                ₹399
+                            </div>
+                            <div class="originalPrice">
+                                <p> <del>₹800</del></p>
+                            </div>
+                            <div class="discount">
+                                50%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_title">
+                            <div>
+                                <span>Gold Helth Smart Package</span>
+                            </div>
+                            <div class="safeIcon">
+                                <div><i class="fa-solid fa-shield-halved"></i></div>
+                                <div>SAFE</div>
+                            </div>
+                        </div>
+                        <div class="priceSection">
+                            <div class="discountPrice">
+                                ₹399
+                            </div>
+                            <div class="originalPrice">
+                                <p> <del>₹800</del></p>
+                            </div>
+                            <div class="discount">
+                                50%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_title">
+                            <div>
+                                <span>Gold Helth Smart Package</span>
+                            </div>
+                            <div class="safeIcon">
+                                <div><i class="fa-solid fa-shield-halved"></i></div>
+                                <div>SAFE</div>
+                            </div>
+                        </div>
+                        <div class="priceSection">
+                            <div class="discountPrice">
+                                ₹399
+                            </div>
+                            <div class="originalPrice">
+                                <p> ₹800</p>
+                            </div>
+                            <div class="discount">
+                                50%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_title">
+                            <div>
+                                <span>Gold Helth Smart Package</span>
+                            </div>
+                            <div class="safeIcon">
+                                <div><i class="fa-solid fa-shield-halved"></i></div>
+                                <div>SAFE</div>
+                            </div>
+                        </div>
+                        <div class="priceSection">
+                            <div class="discountPrice">
+                                ₹399
+                            </div>
+                            <div class="originalPrice">
+                                <p> ₹800</p>
+                            </div>
+                            <div class="discount">
+                                50%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_title">
+                            <div>
+                                <span>Gold Helth Smart Package</span>
+                            </div>
+                            <div class="safeIcon">
+                                <div><i class="fa-solid fa-shield-halved"></i></div>
+                                <div>SAFE</div>
+                            </div>
+                        </div>
+                        <div class="priceSection">
+                            <div class="discountPrice">
+                                ₹399
+                            </div>
+                            <div class="originalPrice">
+                                <p> <del>₹800</del></p>
+                            </div>
+                            <div class="discount">
+                                50%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_title">
+                            <div>
+                                <span>Gold Helth Smart Package</span>
+                            </div>
+                            <div class="safeIcon">
+                                <div><i class="fa-solid fa-shield-halved"></i></div>
+                                <div>SAFE</div>
+                            </div>
+                        </div>
+                        <div class="priceSection">
+                            <div class="discountPrice">
+                                ₹399
+                            </div>
+                            <div class="originalPrice">
+                                <p> ₹800</p>
+                            </div>
+                            <div class="discount">
+                                50%
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="Full_body_health_checkups_cards">
+            <div class="about-card-link-btn about-card-link-btn2">
+                <p>Featured brands
+                    SEE ALL
+                </p>
+                <button>SEE ALL</button>
+            </div>
+            <div class="helth-card-container">
+                <div class="cards">
+                    <div class="card2">
+                        <div>
+                            <img src="https://onemg.gumlet.io/diagnostics%2F2024-04%2F1712818260_Morepen.png?format=auto"
+                                alt="">
+                        </div>
+
+                    </div>
+                    <div class="card2">
+                        <div>
+                            <img src="https://onemg.gumlet.io/diagnostics%2F2024-04%2F1712818277_Optimum+Nutrition.png?format=auto"
+                                alt="">
+                        </div>
+
+                    </div>
+                    <div class="card2">
+                        <div>
+                            <img src="https://onemg.gumlet.io/diagnostics%2F2024-04%2F1712818290_mCaffeine.png?format=auto"
+                                alt="">
+                        </div>
+
+                    </div>
+                    <div class="card2">
+                        <div>
+                            <img src=https://onemg.gumlet.io/diagnostics%2F2024-04%2F1712818307_Diataal1.png?format=auto"
+                                alt="">
+                        </div>
+
+                    </div>
+                    <div class="card2">
+                        <div>
+                            <img src="https://onemg.gumlet.io/diagnostics%2F2024-04%2F1712818316_Accu+Chek.png?format=auto"
+                                alt="">
+                        </div>
+
+                    </div>
+                    <div class="card2">
+                        <div>
+                            <img src="https://onemg.gumlet.io/diagnostics%2F2024-04%2F1712818330_Cetaphil.png?format=auto"
+                                alt="">
+                        </div>
+
+                    </div>
+                    <div class="card2">
+                        <div>
+                            <img src="https://onemg.gumlet.io/diagnostics%2F2024-04%2F1712818342_Dabur.png?format=auto"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div>
+                            <img src="https://onemg.gumlet.io/diagnostics%2F2024-04%2F1712818342_Dabur.png?format=auto"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div>
+                            <img src="https://onemg.gumlet.io/diagnostics%2F2024-04%2F1712818342_Dabur.png?format=auto"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div>
+                            <img src="https://onemg.gumlet.io/diagnostics%2F2024-04%2F1712818342_Dabur.png?format=auto"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Full_body_health_checkups_cards">
+            <div class="about-card-link-btn about-card-link-btn2">
+                <p>Featured brands
+                    SEE ALL
+                </p>
+                <button>SEE ALL</button>
+            </div>
+            <div class="helth-card-container">
+                <div class="cards">
+                    <div class="card3">
+                        <div class="cardImgDiv">
+                            <img src="https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/51815c3d-2905-4930-be08-d135aa914040.jpeg"
+                                alt="">
+                        </div>
+                        <div class="productName">
+                            Kapiva Dia Foods Diafree Juice for Diabetes Car....
+                        </div>
+                        <div class="packSize">
+                            box of 1.0 Bottle
+                        </div>
+                        <div class="deliveryTime">
+                            Delivery by <span>10pm, Tomorrow</span>
+                        </div>
+                        <div class="priceOrginal">
+                            MRP <span><del>₹599</del></span> <span>5%off</span>
+                        </div>
+                        <div class="discountPrice">
+                            ₹569
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <div class="cardImgDiv">
+                            <img src="https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/3ab53077d4c44f3c9fdbc83d5d3948b0.jpg"
+                                alt="">
+                        </div>
+                        <div class="productName">
+                            Kapiva Dia Foods Diafree Juice for Diabetes Car....
+                        </div>
+                        <div class="packSize">
+                            box of 1.0 Bottle
+                        </div>
+                        <div class="deliveryTime">
+                            Delivery by <span>10pm, Tomorrow</span>
+                        </div>
+                        <div class="priceOrginal">
+                            MRP <span><del>₹599</del></span> <span>5%off</span>
+                        </div>
+                        <div class="discountPrice">
+                            ₹569
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <div class="cardImgDiv">
+                            <img  src="https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/51815c3d-2905-4930-be08-d135aa914040.jpeg"
+                                alt="">
+                        </div>
+                        <div class="productName">
+                            Kapiva Dia Foods Diafree Juice for Diabetes Car....
+                        </div>
+                        <div class="packSize">
+                            box of 1.0 Bottle
+                        </div>
+                        <div class="deliveryTime">
+                            Delivery by <span>10pm, Tomorrow</span>
+                        </div>
+                        <div class="priceOrginal">
+                            MRP <span>₹599</span> <span>5%off</span>
+                        </div>
+                        <div class="discountPrice">
+                            ₹569
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <div class="cardImgDiv">
+                            <img src="https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/51815c3d-2905-4930-be08-d135aa914040.jpeg"
+                                alt="">
+                        </div>
+                        <div class="productName">
+                            Kapiva Dia Foods Diafree Juice for Diabetes Car....
+                        </div>
+                        <div class="packSize">
+                            box of 1.0 Bottle
+                        </div>
+                        <div class="deliveryTime">
+                            Delivery by <span>10pm, Tomorrow</span>
+                        </div>
+                        <div class="priceOrginal">
+                            MRP <span>₹599</span> <span>5%off</span>
+                        </div>
+                        <div class="discountPrice">
+                            ₹569
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <div class="cardImgDiv">
+                            <img src="https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/51815c3d-2905-4930-be08-d135aa914040.jpeg"
+                                alt="">
+                        </div>
+                        <div class="productName">
+                            Kapiva Dia Foods Diafree Juice for Diabetes Car....
+                        </div>
+                        <div class="packSize">
+                            box of 1.0 Bottle
+                        </div>
+                        <div class="deliveryTime">
+                            Delivery by <span>10pm, Tomorrow</span>
+                        </div>
+                        <div class="priceOrginal">
+                            MRP <span>₹599</span> <span>5%off</span>
+                        </div>
+                        <div class="discountPrice">
+                            ₹569
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <div class="cardImgDiv">
+                            <img src="https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/51815c3d-2905-4930-be08-d135aa914040.jpeg"
+                                alt="">
+                        </div>
+                        <div class="productName">
+                            Kapiva Dia Foods Diafree Juice for Diabetes Car....
+                        </div>
+                        <div class="packSize">
+                            box of 1.0 Bottle
+                        </div>
+                        <div class="deliveryTime">
+                            Delivery by <span>10pm, Tomorrow</span>
+                        </div>
+                        <div class="priceOrginal">
+                            MRP <span>₹599</span> <span>5%off</span>
+                        </div>
+                        <div class="discountPrice">
+                            ₹569
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <div class="cardImgDiv">
+                            <img src="https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/51815c3d-2905-4930-be08-d135aa914040.jpeg"
+                                alt="">
+                        </div>
+                        <div class="productName">
+                            Kapiva Dia Foods Diafree Juice for Diabetes Car....
+                        </div>
+                        <div class="packSize">
+                            box of 1.0 Bottle
+                        </div>
+                        <div class="deliveryTime">
+                            Delivery by <span>10pm, Tomorrow</span>
+                        </div>
+                        <div class="priceOrginal">
+                            MRP <span>₹599</span> <span>5%off</span>
+                        </div>
+                        <div class="discountPrice">
+                            ₹569
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <div class="cardImgDiv">
+                            <img src="https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/51815c3d-2905-4930-be08-d135aa914040.jpeg"
+                                alt="">
+                        </div>
+                        <div class="productName">
+                            Kapiva Dia Foods Diafree Juice for Diabetes Car....
+                        </div>
+                        <div class="packSize">
+                            box of 1.0 Bottle
+                        </div>
+                        <div class="deliveryTime">
+                            Delivery by <span>10pm, Tomorrow</span>
+                        </div>
+                        <div class="priceOrginal">
+                            MRP <span>₹599</span> <span>5%off</span>
+                        </div>
+                        <div class="discountPrice">
+                            ₹569
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="Full_body_health_checkups_cards">
+            <div class="about-card-link-btn about-card-link-btn2">
+                <p>Personal care
+                </p>
+                <button>SEE ALL</button>
+            </div>
+            <div class="helth-card-container">
+                <div class="cards">
+                    <!-- <div class="card4">
+
+                    </div> -->
+                    <div class="card2">
+                        <div>
+                            <img src="https://onemg.gumlet.io/diagnostics%2F2023-11%2F1699443647_skinn.webp?format=auto"
+                                alt="">
+                        </div>
+
+                    </div>
+                    <div class="card2">
+                        <div>
+                            <img src="https://onemg.gumlet.io/diagnostics%2F2023-11%2F1699443670_hairr.webp?format=auto"
+                                alt="">
+                        </div>
+
+                    </div>
+                    <div class="card2">
+                        <div>
+                            <img src="https://onemg.gumlet.io/diagnostics%2F2023-11%2F1699443681_sexuall.webp?format=auto"
+                                alt="">
+                        </div>
+
+                    </div>
+                    <div class="card2">
+                        <div>
+                            <img src=https://onemg.gumlet.io/diagnostics%2F2023-11%2F1699443695_orall.webp?format=auto"
+                                alt="">
+                        </div>
+
+                    </div>
+                    <div class="card2">
+                        <div>
+                            <img src="https://onemg.gumlet.io/diagnostics%2F2023-11%2F1699443705_elderly.webp?format=auto"
+                                alt="">
+                        </div>
+
+                    </div>
+                    <div class="card2">
+                        <div>
+                            <img src="https://onemg.gumlet.io/diagnostics%2F2023-11%2F1699443714_baby.webp?format=auto"
+                                alt="">
+                        </div>
+
+                    </div>
+                    <div class="card2">
+                        <div>
+                            <img src="https://onemg.gumlet.io/diagnostics%2F2023-11%2F1699443722_womenn.webp?format=auto"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div>
+                            <img src="https://onemg.gumlet.io/diagnostics%2F2023-11%2F1699443735_menn.webp?format=auto"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div>
+                            <img src="https://onemg.gumlet.io/diagnostics%2F2023-11%2F1699443746_pett.webp?format=auto"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div>
+                            <img src="https://onemg.gumlet.io/diagnostics%2F2023-11%2F1699443746_pett.webp?format=auto"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Full_body_health_checkups_cards">
+            <div class="about-card-link-btn">
+                <p>Pathology Tests | Up to 70% off</p>
+                <button>SEE ALL</button>
+            </div>
+            <div class="helth-card-container">
+                <div class="cards">
+                    <div class="card">
+                        <div class="card_title">
+                            <div>
+                                <span>Lipid Profile</span>
+                            </div>
+                            <div class="safeIcon">
+                                <div><i class="fa-solid fa-shield-halved"></i></div>
+                                <div>SAFE</div>
+                            </div>
+                        </div>
+                        <div class="aboutTest">
+                            Contains 8 tests
+                        </div>
+                        <div class="priceSection">
+                            <div class="discountPrice">
+                                ₹319
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_title">
+                            <div>
+                                <span>CBC (Complete Blood Count)</span>
+                            </div>
+                            <div class="safeIcon">
+                                <div><i class="fa-solid fa-shield-halved"></i></div>
+                                <div>SAFE</div>
+                            </div>
+                        </div>
+                        <div class="aboutTest">
+                            Contains 21 tests
+                        </div>
+                        <div class="priceSection">
+                            <div class="discountPrice">
+                                ₹279
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_title">
+                            <div>
+                                <span>Thyroid Profile Total (T3, T4...</span>
+                            </div>
+                            <div class="safeIcon">
+                                <div><i class="fa-solid fa-shield-halved"></i></div>
+                                <div>SAFE</div>
+                            </div>
+                        </div>
+                        <div class="aboutTest">
+                            Contains 3 tests
+                        </div>
+                        <div class="priceSection">
+                            <div class="discountPrice">
+                                ₹399
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_title">
+                            <div>
+                                <span>Lipid Profile, Non Fasting</span>
+                            </div>
+                            <div class="safeIcon">
+                                <div><i class="fa-solid fa-shield-halved"></i></div>
+                                <div>SAFE</div>
+                            </div>
+                        </div>
+                        <div class="aboutTest">
+                            Contains 8 tests
+                        </div>
+                        <div class="priceSection">
+                            <div class="discountPrice">
+                                ₹399
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_title">
+                            <div>
+                                <span>Coronavirus Covid-19 Test- RT-P</span>
+                            </div>
+                            <div class="safeIcon">
+                                <div><i class="fa-solid fa-shield-halved"></i></div>
+                                <div>SAFE</div>
+                            </div>
+                        </div>
+                        <div class="aboutTest">
+                            Also known as RT-PCR technique..
+                        </div>
+                        <div class="priceSection">
+                            <div class="discountPrice">
+                                ₹399
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
     <script src="script/home.js"></script>
 </body>
