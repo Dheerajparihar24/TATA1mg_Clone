@@ -78,11 +78,19 @@ a {
 }
 
 /* Sign In and Login */
-#profile-navigation>.login-container>a>span {
+/* #profile-navigation>.login-container>a>span {
     font-size: 1rem;
     font-weight: 500;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+} */
+.btnSignup{
+    font-size: 15px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
 }
 
 /* Sign In and Login center border*/

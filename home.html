@@ -42,11 +42,9 @@
             <div class="profile-navigation-container">
                 <div id="profile-navigation">
                     <div class="login-container">
-                        <a href="" class="login-link"> <span>Login</span></a>
+                        <button class="btnSignup" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign In</button>
                         <span id="border-login-sigin">|</span>
-                        <a href="#" id="signup-btn" class="login-link"
-                            onclick="document.getElementById('sign-Up').style.visibility='visible'"><span>Sign
-                                Up</span></a>
+                        <button class="btnSignup" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sigm Up</button>
                     </div>
                     <div class="offer"><a href=""><span>Offers</span></a></div>
                     <div class="cart-container">
@@ -423,10 +421,10 @@
             </ul>
         </div>
     </header>
-    <!------------------------------- signUp page ---------------------->
-    <div class="container-signUp">
-        <div id="sign-Up">
-            <div id="signUp-slider">
+    <!------------------------------- signIn -------------------------->
+    <div id="id02" class="login-box">
+        <form action="/home.html">
+            <div class="slideConatainer">
                 <div class="slide">
                     <img src="https://www.1mg.com/images/login-signup/Your-Go-To-Health-App.png" alt="">
                     <h2>Lorem, ipsum dolor.</h2>
@@ -456,27 +454,85 @@
                         reiciend</p>
                 </div>
             </div>
-            <div id="signUp-from">
-                <i class="fa-solid fa-xmark"></i>
-                <h1>Sign Up</h1>
-                <form>
-                    <label class="signUp-label" for="">First Name*</label>
-                    <br>
-                    <input type="text">
-                    <br>
-                    <label class="signUp-label" for="">Email address*</label>
-                    <br>
-                    <input type="email">
-                    <br>
-                    <label class="signUp-label" for="">Password*</label>
-                    <br>
-                    <input type="password">
-                    <br>
-                    <input id="submit-btn" type="submit" value="Sing Up">
-                </form>
-                <p>Already a user? <a href="">Sign-In</a></p>
+            <div class="container">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <div>
+                    <h1 id="signInheading">Sign In</h1>
+                    <div>
+                        <label for="">Email address<span>*</span></label>
+                        <br>
+                        <input type="email" placeholder="">
+                        <br>
+                        <br>
+                        <label for="">Password <span>*</span></label>
+                        <br>
+                        <input type="password">
+                        <br>
+                        <input type="submit" value="Sign In">
+                        <p>New user?<a href="#">Sign Up</a></p>
+                    </div>
+                </div>
             </div>
-        </div>
+        </form>
+    </div>
+    <!------------------------------- signIn -------------------------->
+
+    <!------------------------------- signUp page ---------------------->
+    <div id="id01" class="login-box">
+        <form action="/home.html">
+            <div class="slideConatainer">
+                <div class="slide">
+                    <img src="https://www.1mg.com/images/login-signup/Your-Go-To-Health-App.png" alt="">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus possimus voluptas
+                        recusandae
+                        reiciend</p>
+                </div>
+                <div class="slide">
+                    <img src="https://www.1mg.com/images/login-signup/Know-Your-Medicines.png" alt="">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus possimus voluptas
+                        recusandae
+                        reiciend</p>
+                </div>
+                <div class="slide">
+                    <img src="https://www.1mg.com/images/login-signup/Lab-Tests-at-Home.png" alt="">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus possimus voluptas
+                        recusandae
+                        reiciend</p>
+                </div>
+                <div class="slide">
+                    <img src="https://www.1mg.com/images/login-signup/Health-Related-Queries.png" alt="">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus possimus voluptas
+                        recusandae
+                        reiciend</p>
+                </div>
+            </div>
+            <div class="container">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <div>
+                    <h1 id="signInheading">Sign Up</h1>
+                    <div>
+                        <label for="">First Name <span>*</span></label>
+                        <br>
+                        <input type="text" placeholder="Enter Name">
+                        <br>
+                        <label for="">Email address<span>*</span></label>
+                        <br>
+                        <input type="email" placeholder="">
+                        <br>
+                        <label for="">Password <span>*</span></label>
+                        <br>
+                        <input type="password">
+                        <br>
+                        <input type="submit" value="Sign In">
+                        <p>Already a user?<a href="#">Sign In</a></p>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
     <!------------------------------- signUp page end ---------------------->
     <div id="banner-container">
@@ -1357,6 +1413,7 @@
         </div>
     </footer>
     <script src="script/home.js"></script>
+    <script src="script/signUp.js"></script>
 </body>
 
 </html>
