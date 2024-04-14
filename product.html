@@ -1,6 +1,526 @@
-<!-- https://onemg.gumlet.io/404_kfxqlu.svg -->
-<!-- 404 -->
-<!-- Sorry :(
-The requested page does not exist. -->
-<!-- Here are some links that you may find useful
-BOOK LAB TEST |CHAT WITH A DOCTOR FOR FREE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/signUp.css">
+</head>
+<body>
+    <header id="big-screen">
+        <div id="top-nav">
+            <div id="lnk-logo-div">
+                <div class="logo">
+                    <img src="https://www.1mg.com/images/tata_1mg_logo.svg" alt="TATA1mg-logo">
+                </div>
+                <div id="top-nav-link">
+                    <ul>
+                        <li><a href="">MEDICINES</a></li>
+                        <li><a href="">LAB TESTS</a></li>
+                        <li><a href="">CONSULT DOCTORS</a></li>
+                        <li><a href="">CANCER</a></li>
+                        <li><a href="">AYURVEDA</a></li>
+                        <li><a href="">CARE PLAN</a></li>
+                    </ul>
+                </div>
+                <!-- menu for small screen -->
+                <i id="menu-btn" class="fa-solid fa-bars"></i>
+            </div>
+            <div class="profile-navigation-container">
+                <div id="profile-navigation">
+                    <div class="login-container">
+                        <button class="btnSignup" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign In</button>
+                        <span id="border-login-sigin">|</span>
+                        <button class="btnSignup" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sigm Up</button>
+                    </div>
+                    <div class="offer"><a href=""><span>Offers</span></a></div>
+                    <div class="cart-container">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                        <div class="dropdown-content">
+                            <div id="cart-summary">
+                                <span>Order Summary</span>
+                                <p><span>0</span>Item</p>
+                            </div>
+                            <div id="cart-name">
+                                <span>PRODUCT TO CART</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="need-help-container"><a href=""><span>Need Help?</span></a></div>
+            </div>
+        </div>
+        <!------------ nav-second-row --------------->
+        <div id="nav-second-row">
+            <div class="location-search-div">
+                <!-- location-div -->
+                <div class="location-container">
+                    <div class="location-marker"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="location-input">
+                        <input placeholder="Enter your city" value="New Delhi">
+                    </div>
+                    <div class="location-city-pointer"><i class="fa-solid fa-location-crosshairs"></i></div>
+                </div>
+                <!-- search-div -->
+                <div class="searchbar-div">
+                    <input type="search" id="srchBarShwInfo" placeholder="Search for Medicines and Health Products"
+                        value="">
+                    <div class="input-serch-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                </div>
+                <!-- quick-buy-div -->
+                <div class="quick-buy-bar">
+                    <div class="quick-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <span>
+                        QUICK BUY!
+                        <!-- --  -->
+                        Get 15% off on medicines*
+                    </span>
+                </div>
+                <div class="quick-buy-link">
+                    <a href=""><span>Quick order</span></a>
+                </div>
+            </div>
+        </div>
+        <!------------ nav-second-row-end --------------->
+        <div class="nav-third-row">
+            <ul>
+                <li class="na-orange-hover" id="navThird-linkFirst">
+                    <div>
+                        <a href=""><span>Health Resource Center</span></a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-div">
+                        <a href="#">All Diseases</a>
+                        <a href="#">All Medicines</a>
+                        <a href="#">Medicines by Therapeutic Class</a>
+                    </div>
+                </li>
+                <li class="na-orange-hover" id="navThird-linkSecond">
+                    <div>
+                        <a href=""><span>Vitamins & Nutrition</span></a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-div-1">
+                        <div>
+                            <div>
+                                <a href="#"><b>Vitamins & Supplements</b></a>
+                                <a href="#">Multivitamins</a>
+                                <a href="#">Vitamin D3</a>
+                                <a href="#">Vitamin C</a>
+                                <a href="#">Minerals</a>
+                                <a href="#">Calcium</a>
+                                <a href="#">Vitamin B12 & B Complex</a>
+                                <a href="#">Other Vitamins</a>
+                                <a href="#"><b>Nutritional Drinks</b></a>
+                                <a href="#">Adult Daily Nutrition</a>
+                                <a href="#">Kids Nutrition (2-15 Yrs)</a>
+                                <a href="#">Women Nutrition</a>
+                                <a href="#"><b>Global supplements</b></a>
+                                <a href="#">Now Foods</a>
+                                <a href="#">Solgar</a>
+                                <a href="#">Nordic naturals</a>
+                            </div>
+                            <div>
+                                <a href="#"><b> Nutritional Supplements</b></a>
+                                <a href="#">Dr. Morepen</a>
+                                <a href="#">Power Gummies</a>
+                                <a href="#">Tata 1mg</a>
+                                <a href="#">HealthKart</a>
+                                <a href="#">Carbamide Forte</a>
+                                <a href="#">Swisse</a>
+                                <a href="#">Zingavita</a>
+                                <a href="#">Protein Supplements</a>
+                                <a href="#">Whey Protein</a>
+                                <a href="#">Amino Acids</a>
+                                <a href="#">Mass Gainers</a>
+                                <a href="#">Workout Essential</a>
+                                <a href="#">Fat Burners</a>
+                            </div>
+                            <div>
+                                <a href="#"><b>Healthy Snacks & Drinks</b></a>
+                                <a href="#">Green Tea & Herbal Tea</a>
+                                <a href="#">Energy Foods</a>
+                                <a href="#">Rehydration Beverages</a>
+                                <a href="#">Apple Cider Vinegar</a>
+                                <a href="#">Nuts & Cereals</a>
+                                <a href="#">Chyawanprasha</a>
+                                <a href="#"><b>Omega & Fish Oil</b></a>
+                                <a href="#">Fish Oil</a>
+                                <a href="#">Cod Liver Oil</a>
+                                <a href="#">Flax Seed Oil</a>
+                                <a href="#"><b> Specialty Supplements</b></a>
+                                <a href="#">Pre and Probiotics</a>
+                                <a href="#">Glucosamine</a>
+                                <a href="#">Collagen</a>
+                                <a href="#">Antioxidants</a>
+                                <a href="#">Biotin</a>
+                            </div>
+                            <div>
+                                <a href="#"><b>Vitamins & Supplements</b></a>
+                                <a href="#">Multivitamins</a>
+                                <a href="#">Vitamin D3</a>
+                                <a href="#">Vitamin C</a>
+                                <a href="#">Minerals</a>
+                                <a href="#">Calcium</a>
+                                <a href="#">Vitamin B12 & B Complex</a>
+                                <a href="#">Other Vitamins</a>
+                                <a href="#"><b>Nutritional Drinks</b></a>
+                                <a href="#">Adult Daily Nutrition</a>
+                                <a href="#">Kids Nutrition (2-15 Yrs)</a>
+                                <a href="#">Women Nutrition</a>
+                                <a href="#"><b>Global supplements</b></a>
+                                <a href="#">Now Foods</a>
+                                <a href="#">Solgar</a>
+                                <a href="#">Nordic naturals</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="na-orange-hover" id="navThird-linkthird">
+                    <div>
+                        <a href=""><span>Personal Care</span></a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-div-2">
+                        <div>
+                            <div>
+                                <a href="#"><b>Vitamins & Supplements</b></a>
+                                <a href="#">Multivitamins</a>
+                                <a href="#">Vitamin D3</a>
+                                <a href="#">Vitamin C</a>
+                                <a href="#">Minerals</a>
+                                <a href="#">Calcium</a>
+                                <a href="#">Vitamin B12 & B Complex</a>
+                                <a href="#">Other Vitamins</a>
+                                <a href="#"><b>Nutritional Drinks</b></a>
+                                <a href="#">Adult Daily Nutrition</a>
+                                <a href="#">Kids Nutrition (2-15 Yrs)</a>
+                                <a href="#">Women Nutrition</a>
+                                <a href="#"><b>Global supplements</b></a>
+                                <a href="#">Now Foods</a>
+                                <a href="#">Solgar</a>
+                                <a href="#">Nordic naturals</a>
+                            </div>
+                            <div>
+                                <a href="#"><b> Nutritional Supplements</b></a>
+                                <a href="#">Dr. Morepen</a>
+                                <a href="#">Power Gummies</a>
+                                <a href="#">Tata 1mg</a>
+                                <a href="#">HealthKart</a>
+                                <a href="#">Carbamide Forte</a>
+                                <a href="#">Swisse</a>
+                                <a href="#">Zingavita</a>
+                                <a href="#">Protein Supplements</a>
+                                <a href="#">Whey Protein</a>
+                                <a href="#">Amino Acids</a>
+                                <a href="#">Mass Gainers</a>
+                                <a href="#">Workout Essential</a>
+                                <a href="#">Fat Burners</a>
+                            </div>
+                            <div>
+                                <a href="#"><b>Healthy Snacks & Drinks</b></a>
+                                <a href="#">Green Tea & Herbal Tea</a>
+                                <a href="#">Energy Foods</a>
+                                <a href="#">Rehydration Beverages</a>
+                                <a href="#">Apple Cider Vinegar</a>
+                                <a href="#">Nuts & Cereals</a>
+                                <a href="#">Chyawanprasha</a>
+                                <a href="#"><b>Omega & Fish Oil</b></a>
+                                <a href="#">Fish Oil</a>
+                                <a href="#">Cod Liver Oil</a>
+                                <a href="#">Flax Seed Oil</a>
+                                <a href="#"><b> Specialty Supplements</b></a>
+                                <a href="#">Pre and Probiotics</a>
+                                <a href="#">Glucosamine</a>
+                                <a href="#">Collagen</a>
+                                <a href="#">Antioxidants</a>
+                                <a href="#">Biotin</a>
+                            </div>
+                            <div>
+                                <a href="#"><b>Vitamins & Supplements</b></a>
+                                <a href="#">Multivitamins</a>
+                                <a href="#">Vitamin D3</a>
+                                <a href="#">Vitamin C</a>
+                                <a href="#">Minerals</a>
+                                <a href="#">Calcium</a>
+                                <a href="#">Vitamin B12 & B Complex</a>
+                                <a href="#">Other Vitamins</a>
+                                <a href="#"><b>Nutritional Drinks</b></a>
+                                <a href="#">Adult Daily Nutrition</a>
+                                <a href="#">Kids Nutrition (2-15 Yrs)</a>
+                                <a href="#">Women Nutrition</a>
+                                <a href="#"><b>Global supplements</b></a>
+                                <a href="#">Now Foods</a>
+                                <a href="#">Solgar</a>
+                                <a href="#">Nordic naturals</a>
+                            </div>
+                            <div>
+                                <a href="#"><b>Vitamins & Supplements</b></a>
+                                <a href="#">Multivitamins</a>
+                                <a href="#">Vitamin D3</a>
+                                <a href="#">Vitamin C</a>
+                                <a href="#">Minerals</a>
+                                <a href="#">Calcium</a>
+                                <a href="#">Vitamin B12 & B Complex</a>
+                                <a href="#">Other Vitamins</a>
+                                <a href="#"><b>Nutritional Drinks</b></a>
+                                <a href="#">Adult Daily Nutrition</a>
+                                <a href="#">Kids Nutrition (2-15 Yrs)</a>
+                                <a href="#">Women Nutrition</a>
+                                <a href="#"><b>Global supplements</b></a>
+                                <a href="#">Now Foods</a>
+                                <a href="#">Solgar</a>
+                                <a href="#">Nordic naturals</a>
+                            </div>
+                            <div>
+                                <a href="#">Vitamin B12 & B Complex</a>
+                                <a href="#">Other Vitamins</a>
+                                <a href="#"><b>Nutritional Drinks</b></a>
+                                <a href="#">Adult Daily Nutrition</a>
+                                <a href="#">Kids Nutrition (2-15 Yrs)</a>
+                                <a href="#">Women Nutrition</a>
+                                <a href="#"><b>Global supplements</b></a>
+                                <a href="#">Now Foods</a>
+                                <a href="#">Solgar</a>
+                                <a href="#">Nordic naturals</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="na-orange-hover" id="navThird-linkforth">
+                    <div>
+                        <a href=""><span>Healthcare Devices</span></a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-div-3">
+                        <div>
+                            <div>
+                                <a href="#"><b>Vitamins & Supplements</b></a>
+                                <a href="#">Multivitamins</a>
+                                <a href="#">Vitamin D3</a>
+                                <a href="#">Vitamin C</a>
+                                <a href="#">Minerals</a>
+                                <a href="#">Calcium</a>
+                                <a href="#">Vitamin B12 & B Complex</a>
+                                <a href="#">Other Vitamins</a>
+                                <a href="#"><b>Nutritional Drinks</b></a>
+                                <a href="#">Adult Daily Nutrition</a>
+                                <a href="#">Kids Nutrition (2-15 Yrs)</a>
+                                <a href="#">Women Nutrition</a>
+                                <a href="#"><b>Global supplements</b></a>
+                                <a href="#">Now Foods</a>
+                                <a href="#">Solgar</a>
+                                <a href="#">Nordic naturals</a>
+                                <a href="#"><b>Nutritional Drinks</b></a>
+                                <a href="#">Adult Daily Nutrition</a>
+                                <a href="#">Kids Nutrition (2-15 Yrs)</a>
+                                <a href="#">Women Nutrition</a>
+                            </div>
+                            <div>
+                                <a href="#"><b> Nutritional Supplements</b></a>
+                                <a href="#">Dr. Morepen</a>
+                                <a href="#">Power Gummies</a>
+                                <a href="#">Tata 1mg</a>
+                                <a href="#">HealthKart</a>
+                                <a href="#">Carbamide Forte</a>
+                                <a href="#">Swisse</a>
+                                <a href="#">Zingavita</a>
+                                <a href="#">Protein Supplements</a>
+                                <a href="#">Whey Protein</a>
+                                <a href="#">Amino Acids</a>
+                                <a href="#">Mass Gainers</a>
+                                <a href="#">Workout Essential</a>
+                                <a href="#">Fat Burners</a>
+                                <a href="#">Vitamin B12 & B Complex</a>
+                                <a href="#">Other Vitamins</a>
+                                <a href="#"><b>Nutritional Drinks</b></a>
+                                <a href="#">Adult Daily Nutrition</a>
+                                <a href="#">Kids Nutrition (2-15 Yrs)</a>
+                                <a href="#">Women Nutrition</a>
+                            </div>
+                            <div>
+                                <a href="#"><b>Healthy Snacks & Drinks</b></a>
+                                <a href="#">Green Tea & Herbal Tea</a>
+                                <a href="#">Energy Foods</a>
+                                <a href="#">Rehydration Beverages</a>
+                                <a href="#">Apple Cider Vinegar</a>
+                                <a href="#">Nuts & Cereals</a>
+                                <a href="#">Chyawanprasha</a>
+                                <a href="#"><b>Omega & Fish Oil</b></a>
+                                <a href="#">Fish Oil</a>
+                                <a href="#">Cod Liver Oil</a>
+                                <a href="#">Flax Seed Oil</a>
+                                <a href="#"><b> Specialty Supplements</b></a>
+                                <a href="#">Pre and Probiotics</a>
+                                <a href="#">Glucosamine</a>
+                                <a href="#">Collagen</a>
+                                <a href="#">Antioxidants</a>
+                                <a href="#">Biotin</a>
+                                <a href="#">Vitamin C</a>
+                                <a href="#">Minerals</a>
+                                <a href="#">Calcium</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="na-orange-hover">
+                    <div>
+                        <a href=""><span>Ayurveda Products</span></a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <!-- <div class="dropdown-div">
+                    </div> -->
+                </li>
+                <li class="na-orange-hover">
+                    <div>
+                        <a href=""><span>Diabetes</span></a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <!-- <div class="dropdown-div">
+                    </div> -->
+                </li>
+                <li class="na-orange-hover">
+                    <div>
+                        <a href=""><span>Health Conditions</span></a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <!-- <div class="dropdown-div">
+                    </div> -->
+                </li>
+                <li class="na-orange-hover">
+                    <div>
+                        <a href=""><span>Homeopathy</span></a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <!-- <div class="dropdown-div">
+                    </div> -->
+                </li>
+                <li class="na-orange-hover">
+                    <div>
+                        <a href=""><span>Featured</span></a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <!-- <div class="dropdown-div">
+                    </div> -->
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!------------------------------- signIn -------------------------->
+    <div id="id02" class="login-box">
+        <form action="/home.html">
+            <div class="slideConatainer">
+                <div class="slide">
+                    <img src="https://www.1mg.com/images/login-signup/Your-Go-To-Health-App.png" alt="">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus possimus voluptas
+                        recusandae
+                        reiciend</p>
+                </div>
+                <div class="slide">
+                    <img src="https://www.1mg.com/images/login-signup/Know-Your-Medicines.png" alt="">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus possimus voluptas
+                        recusandae
+                        reiciend</p>
+                </div>
+                <div class="slide">
+                    <img src="https://www.1mg.com/images/login-signup/Lab-Tests-at-Home.png" alt="">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus possimus voluptas
+                        recusandae
+                        reiciend</p>
+                </div>
+                <div class="slide">
+                    <img src="https://www.1mg.com/images/login-signup/Health-Related-Queries.png" alt="">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus possimus voluptas
+                        recusandae
+                        reiciend</p>
+                </div>
+            </div>
+            <div class="container">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <div>
+                    <h1 id="signInheading">Sign In</h1>
+                    <div>
+                        <label for="">Email address<span>*</span></label>
+                        <br>
+                        <input type="email" placeholder="">
+                        <br>
+                        <br>
+                        <label for="">Password <span>*</span></label>
+                        <br>
+                        <input type="password">
+                        <br>
+                        <input type="submit" value="Sign In">
+                        <p>New user?<a href="#">Sign Up</a></p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!------------------------------- signIn -end -------------------------->
+
+    <!------------------------------- signUp page ---------------------->
+    <div id="id01" class="login-box">
+        <form action="/home.html">
+            <div class="slideConatainer">
+                <div class="slide">
+                    <img src="https://www.1mg.com/images/login-signup/Your-Go-To-Health-App.png" alt="">
+                    <h2>Make Helthcare simple</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus possimus voluptas
+                        recusandae
+                        reiciend</p>
+                </div>
+                <div class="slide">
+                    <img src="https://www.1mg.com/images/login-signup/Know-Your-Medicines.png" alt="">
+                    <h2>Know Your medicine</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus possimus voluptas
+                        recusandae
+                        reiciend</p>
+                </div>
+                <div class="slide">
+                    <img src="https://www.1mg.com/images/login-signup/Lab-Tests-at-Home.png" alt="">
+                    <h2>Medicines, Home Delivery</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus possimus voluptas
+                        recusandae
+                        reiciend</p>
+                </div>
+                <div class="slide">
+                    <img src="https://www.1mg.com/images/login-signup/Health-Related-Queries.png" alt="">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus possimus voluptas
+                        recusandae
+                        reiciend</p>
+                </div>
+            </div>
+            <div class="container">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <div>
+                    <h1 id="signInheading">Sign Up</h1>
+                    <div>
+                        <label for="">First Name <span>*</span></label>
+                        <br>
+                        <input type="text" placeholder="Enter Name">
+                        <br>
+                        <label for="">Email address<span>*</span></label>
+                        <br>
+                        <input type="email" placeholder="">
+                        <br>
+                        <label for="">Password <span>*</span></label>
+                        <br>
+                        <input type="password">
+                        <br>
+                        <input type="submit" value="Sign In">
+                        <p>Already a user?<a href="#">Sign In</a></p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

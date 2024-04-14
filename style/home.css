@@ -170,6 +170,7 @@ body {
 .card .title {
     font-size: 16px;
     margin-top: 5px;
+    /* padding-bottom:30px; */
 }
 
 /* Card control styles */
@@ -210,6 +211,8 @@ body {
     display: flex;
     justify-content: space-between;
     margin: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 .about-card-link-btn:first-child p{
     font-size: 18px;
